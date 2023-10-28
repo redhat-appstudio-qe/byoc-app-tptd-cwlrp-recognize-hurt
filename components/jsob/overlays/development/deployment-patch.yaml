@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jsob
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ihvg-tenant/byoc-app-tptd/jsob@sha256:a8f494cd90476e8867b984038b0ed86c4bbfe3ee71c77c48205334b562d36dbe
+        name: my-java-quarkus
+        resources: {}
+status: {}
