@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: jsob
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-ihvg-tenant/byoc-app-tptd/jsob@sha256:a8f494cd90476e8867b984038b0ed86c4bbfe3ee71c77c48205334b562d36dbe
         name: my-java-quarkus
         ports:
         - containerPort: 8081
